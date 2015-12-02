@@ -2,11 +2,12 @@ sudo: required
 
 services:
   - docker
-  
+
 env:
   DOCKER_COMPOSE_VERSION: 1.5.1
 
 before_install:
+  - echo $DOCKER_HOST
   - mkdir laravel
   - mkdir logs
   - sudo rm /usr/local/bin/docker-compose
