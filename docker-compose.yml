@@ -1,0 +1,5 @@
+application:
+    build: app
+    volumes:
+        - ./laravel:/var/www/laravel
+    tty: true
